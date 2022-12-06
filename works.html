@@ -4,16 +4,158 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles2.css">
+    <script src="slideshow_script.js"></script>
     <title>Caleb's Works</title>
 </head>
 <body>
-    <p>Caleb's Works</p>
-    <nav>
-        <ul>
-            <li><a href="/index.html">Home</a></li>
-            <li><a href="/works.html">Works</a></li>
-            <li><a href="/contactme.html">Contact Me</a></li>
-        </ul>
+    <nav id="navbar-container">
+        <div id="navbar">
+            <div id="navbar-home"><a href="index.html">iamkongfused</a></div>
+            <div id="navbar-right">
+            <div class="navbar-item" id="navbar-my-work"><a href="works.html">My Work</a></div>
+            <div class="navbar-item" id="navbar-resume"><a href="">Resume</a></div>
+            <div class="navbar-item" id="navbar-contact-info"><a href="">Contact Info</a></div>
+            </div>
+        </div>
     </nav>
+    <div id="page-container">
+        <div id="sidebar-container">
+            <ul>
+                <li><a href="#art-section-header">Art</a></li>
+                <li><a href="#bowling-section-header">Bowling</a></li>
+                <li><a href="#ml-section-header">Machine Learning</a></li>
+                <li><a href="#video-section-header">Videography</a></li>
+                <li><a href="#volunteer-section-header">Volunteer Work</a></li>
+
+            </ul>
+        </div>
+        <div id="content-container">
+            <section class="work-section">
+                <div class="work-section-header" id="ml-section-header"><h3>Machine Learning</h3></div>
+                <div id="ml-section-content">
+                    <div id="ml-text">
+                        <p>
+                            In a machine learning course at Shenandoah Valley Governor's School, I created
+                            the Break Point Predictor for competitive bowlers. With the donation of an extensive 
+                            research dataset from the Professional Bowlers Association, I implemented an XGBoost 
+                            gradient boost algorithm to guess where the optimal location to bowl a strike is.
+                        </p>
+                        <p>
+                            The Break Point Predictor takes the input of a few key details about a given shot to determine
+                            the length of the oil pattern. The point where the oil stops on a boling lane is called the 
+                            break point because it is where the hooking bowling balls will 'break' towards the pins. 
+                            The algorithm is able to accurately estimate the break point within a foot 
+                            from the actual length of the oil. 
+                        </p>
+                        <p>
+                            The goal of this project was to balance accuracy with ease of use for bowlers without the 
+                            ability to find precise data measurements. With that in mind, the Break Point Predictor went
+                            above and beyond what I thought was possible. The success of this project earned the Best in 
+                            Machine Learning Award from Shenandoah Valley Governor's School.
+                        </p>
+                    </div>
+                    <div id="mlExample-container">
+                        <img id="mlExample" src="images/MachineLearningExample.gif">
+                    </div>
+                </div>
+            </section>
+            <section class="work-section">
+                <div class="work-section-header" id="art-section-header"><h3>Art</h3></div>
+                <p>
+                    Art has been a long-time hobby of mine. Over the years, I have complete several recerational
+                    and semi-professional projects. I have created both physical and graphic designs that were
+                    comissioned by people.
+                </p>
+                <div class="slideshow-container">
+                    <div id="slideshow-content-container">
+                        <div class="slide" id="first">
+                            <img class="art" src="images/art1.jpg" style="height: 300px">
+                            <div class="text">Graphic design sumbission for Chinese-American Soceity</div>
+                        </div>
+                        <div class="slide">
+                            <img class="art" src="images/art2.jpg" style="height: 300px">
+                            <div class="text">Graphic design commission for a horse keeper</div>
+                        </div>
+                        <div class="slide">
+                            <img class="art" src="images/art3.jpg" style="height: 300px">
+                            <div class="text">8x5 foot mural commission for a youth group</div>
+                        </div>
+                    </div>
+                    <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+                    <a class="next" onclick="plusSlides(1)">&#10095;</a>
+                    <div style="text-align:center">
+                        <span class="dot" onclick="currentSlide(1)"></span>
+                        <span class="dot" onclick="currentSlide(2)"></span>
+                        <span class="dot" onclick="currentSlide(3)"></span>
+                    </div>
+                </div>
+            </section>
+            <section class="work-section">
+                <div class="work-section-header" id="video-section-header"><h3>Videography</h3></div>
+                <p>
+                    Film making and editing has been a hobby of mine for several years. Most recently, I had the 
+                    opportunity to work with a few of my peers to create a professional video. The prompt was
+                    to analyze and implement viral video-making techniques to engage a viewer and convey a message.
+                    Our group decided to focus on bowling, specifially how a beginner can learn to start getting 
+                    higher scores. My job was to orgainze the content and edit the video. Our group's submission 
+                    was a huge success gathering nearly quadrouple the amount  of views of the second place 
+                    sumbission.
+                </p>
+                <div style="width:100%">
+                <iframe id="video" width="560" height="315" src="https://www.youtube.com/embed/evWbzbEoxXI" 
+                title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; 
+                encrypted-media; gyroscope; picture-in-picture" allowfullscreen>
+                </iframe>
+                </div>
+            </section>
+            <section class="work-section">
+                <div class="work-section-header" id="volunteer-section-header"><h3>Volunteer Work</h3></div>
+                <p>
+                    Working with my church, I was able to do a lot of community outreach. I got the opprotunity to 
+                    travel and help others in need. 
+                    <ul>
+                        <li>I have participated in the Back-To-School Clothes and Supplies 
+                            Drive for the past eight years.</li>
+                        <li>I traveled to Alaska where we did crafts, handed out free sandwiches, and conversated 
+                            with children, teenagers, and adults low-income communites.</li>
+                        <li>I traveled to West Virginia where we aided the flood victims in 2016. We helped prepare
+                            homes for rennovation, cleaned up trash, and offered free supplies to those in the 
+                            community.
+                        </li>
+                        <li>I helped deleiver food packages to families in need at the beginning of the COVID-19
+                            epidemic.
+                        </li>
+                    </ul>
+                </p>
+            </section>
+            <section class="work-section">
+                <div class="work-section-header" id="bowling-section-header"><h3>Bowling</h3></div>
+                <p>
+                    I have been bowling competitvely for eight years in leagues and prize tournaments. Thoughout
+                    my bowling career I have won thousands of dollars in scholarships and coached several of my peers.
+                    A list of all the tournaments I participated in:
+                    <ul>
+                        <li>2017 Staunton Adult-Youth No-Tap Tournament</li>
+                        <li>2018 Virginia State PEPSI USBC Youth Championships - STATE FINALS</li>
+                        <li>17TH Virginia State Annual High School Tournament - 2018 (Placed 9th)</li>
+                        <li>2018 Staunton Adult-Youth No-Tap Tournament</li>
+                        <li>USBC 53rd Annual Virginia State Youth Tourament 2018</li>
+                        <li>18TH Virginia State Annual High School Tournament - 2019 (Placed 9th)</li>
+                        <li>2019 Staunton Adult-Youth No-Tap Tournament</li>
+                        <li>2019 Virginia State PEPSI USBC Youth Championships - STATE FINALS (Placed 7th)</li>
+                        <li>USBC 53rd Annual Virginia State Youth Tourament 2019 (Placed 7th Teams, 
+                            2nd Doubles, 8th Singles)</li>
+                        <li>19TH Virginia State Annual High School Tournament - 2020 (Placed 1st)</li>
+                        <li>2020 Staunton Adult-Youth No-Tap Tournament (Placed 3rd)</li>
+                        <li>Central Shenandoah Valley Youth Open Youth Tournament - 2020</li>
+                        <li>20TH Virginia State Annual High School Tournament - 2021</li>
+                        <li>2021 Virginia State PEPSI USBC Youth Championships - STATE FINALS (Placed 8th)</li>
+                        <li>USBC 53rd Annual Virginia State Youth Tourament 2021 (Placed 9th Teams)</li>
+                    </ul>
+                </p>
+            </section>
+        </div>
+    </div>
 </body>
 </html>

@@ -1,7 +1,7 @@
 body {
-    background-color: #f3f3f3;
+    background-color: #eeefff;
     margin:0;
-    font-family:Arial, Helvetica, sans-serif;
+    font-family:Verdana,sans-serif;
     line-height:1.6em;
 }
 .clr{
@@ -9,13 +9,20 @@ body {
 
 }
 .spacer{
-    height:500px;
+    height:100px;
     width:90px;
 }
+.body-text{
+    font-size:18px;
+}
+
 
 #page-container {
-    width:100vw;
+    width:100%;
     max-width:100%;
+    margin:auto;
+    /* background-color: #606a82; */
+
 }
 
 /*
@@ -35,9 +42,23 @@ Grid layout to set navbar on top of title page
 
 
 
-
+.navbar-item{
+    width: 140px;
+    margin-top:10px;
+    align-items: center;
+    text-align: center;
+}
+#navbar a{
+    color:#dcdcdc;
+    font-size: 20px;
+    text-decoration: none;
+}
+#navbar-my-work:hover, #navbar-resume:hover, #navbar-contact-info:hover{
+    font-weight: bold;
+    color:#ffffff;
+}
 #navbar-container {
-    
+    background-color: #5252526c;
     z-index:1;
     grid-row:1/span 1;
     height: 50px;
@@ -48,28 +69,24 @@ Grid layout to set navbar on top of title page
     justify-content: space-between;
 }
 #navbar-home {
+    width:150px;
+    height:100px;
+    padding-top:10px;
     margin-left:30px;
-    padding-top:15px;
 }
-#navbar ul{
-    padding-right:20px;
-    list-style:none;
-}
-#navbar li{
-    display:inline;
-    margin: 0 10px;
-}
-#navbar a{
-    color:#f3f3f3;
-    font-size: 18.5px;
-    text-decoration: none;
-}
-#navbar a:hover{
-    color:rgb(158, 158, 158);
+#navbar-home a{
+    font-size:30px; 
+    font-weight:bold;
 }
 
+#navbar-right {
+    display:flex;
+}
+#navbar-contact-info{
+    margin-right:20px;
+}
 
-
+ 
 #title-banner-container{  
     grid-row:1/span 2;
     height:100%;
@@ -80,13 +97,53 @@ Grid layout to set navbar on top of title page
 #personal-picture-container{
     height:70%;
 }
-
 #personal-picture{
     height:100%;
     width:100%;
     object-fit:cover;
 }
 #title-card-container{
-    height:30%;
-    background-color: #f3f3f3;
+    text-align: center;
+        height:30%;
+    background-color: #eeefff;
+}
+
+
+
+#about-me-container {
+    width: calc(100%-60px);
+    max-width: 100%;
+    padding:10px;
+    /* background-color:#f3f3f3; */
+}
+#about-me-content{
+    display:flex;
+    margin:auto;
+    width:80%;
+}
+#professional-picture-container{
+    width:40%;
+}
+#professional-picture{
+    width:100%;
+}
+#about-me-text{
+    position:relative;
+    padding-left:20px;
+    width:60%;
+}
+#center-about-me-text{
+    margin: 0;
+    position: absolute;
+    top: 50%;
+    -ms-transform: translateY(-50%);
+    transform: translateY(-50%);
+}
+
+
+
+@media screen and (max-width: 561px) {
+    #navbar {
+        justify-content: none;
+    }
 }

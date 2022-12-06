@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="viewport" content="width=device-width, height=device-height, initial-scale=1.0">
     <link rel="stylesheet" href="styles.css">
     <title>iamkongfuesd.gituhub.io</title>
 </head>
@@ -11,28 +11,58 @@
   <div id="grid-container">
     <nav id="navbar-container">
       <div id="navbar">
-        <div id="navbar-home"><a href="index.html">Home</a></div>
-        <ul>
-          <li><a href="">My Work</a></li>
-          <li><a href="">Resume</a></li>
-          <li><a href="">Contact Info</a></li>
-        </ul>
+        <div id="navbar-home"><a href="index.html">iamkongfused</a></div>
+        <div id="navbar-right">
+          <div class="navbar-item" id="navbar-my-work"><a href="works.html">My Work</a></div>
+          <div class="navbar-item" id="navbar-resume"><a href="">Resume</a></div>
+          <div class="navbar-item" id="navbar-contact-info"><a href="">Contact Info</a></div>
+        </div>
       </div>
     </nav>
     <section id="title-banner-container">
       <div id="personal-picture-container">
+        <picture>
+          <source 
+            srcset="images/IMG-5683-2-1.JPG"
+            media="(min-width: 561px)"
+          />
+          <img id="personal-picture"  
+            src="images/IMG-5683-5-4.JPG" 
+            alt="me"
+          />
+        </picture>
+        <!---
         <img id="personal-picture" src="images/IMG-5683-2-1.JPG" alt="me">
+        -->
       </div>
       <div id="title-card-container">
-        <h2>My Website is <strong>AWESOME</strong>!!!</h2>
+        <h2>Welcome to my website!</h2>
+        <h3>Browse around to learn more about me</h3>
       </div>
     </section>
   </div>
   <div class = "clr"></div>
   <div id="page-container">
-    <div class = "spacer">x</div>
+    <div id="about-me-container">
+      <div id="about-me-content">
+        <div id="professional-picture-container">
+          <img id="professional-picture" src="images/Professional-Photo.jpg" alt="me">
+        </div>
+        <article class="body-text" id="about-me-text">
+          <div id="center-about-me-text">
+            <h4>Hey! My name is Caleb Kong.</h4>
+            <p>
+              I am Chinese-American university student from Stuarts Draft, Virginia. I'm currently enrolled at 
+              Virginia Tech pursuing degrees in Computer Science and Mathematics. 
+              My hobbies and interests include education, art and graphic design, music, and athletics. 
+              I love to learn and always looking to try new things and expand my skill set. 
+            </p>
+          </div>
+        </article>
+      </div>
+    </div>
+    <div class = "spacer"></div>  
   </div>
-
 </body>
 
 </html>
