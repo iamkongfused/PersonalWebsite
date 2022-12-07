@@ -86,7 +86,51 @@ Grid layout to set navbar on top of title page
     margin-right:20px;
 }
 
- 
+
+@media screen and (max-width: 700px) {
+    #navbar {
+        justify-content: none;
+    }
+    .navbar-item{
+        width: 70px;
+        margin-top:10px;
+        align-items: center;
+        text-align: center;
+
+    }
+    #navbar a {
+        font-size:13px;
+    }
+    #navbar-home a{
+        font-size:20px;
+    }
+    #navbar-my-work {
+        width:80px;
+    }
+    #navbar-contact-info{
+        margin-right:5px;
+    }
+    
+} 
+@media screen and (max-width: 450px) {
+    .navbar-item{
+        width: 60px;
+        margin-top:10px;
+        align-items: center;
+        text-align: center;
+    }
+    #navbar a {
+        font-size:10px;
+    }
+    #navbar-home{
+        width:100px;
+        font-size:15px;
+        padding-top:0px;
+        margin-top:10px;
+        margin-left: 20px;
+    }
+}
+
 #title-banner-container{  
     grid-row:1/span 2;
     height:100%;
@@ -104,8 +148,9 @@ Grid layout to set navbar on top of title page
 }
 #title-card-container{
     text-align: center;
-        height:30%;
+    height:30%;
     background-color: #eeefff;
+    padding:10px;
 }
 
 
@@ -139,11 +184,20 @@ Grid layout to set navbar on top of title page
     -ms-transform: translateY(-50%);
     transform: translateY(-50%);
 }
-
-
-
-@media screen and (max-width: 561px) {
-    #navbar {
-        justify-content: none;
+@media screen and (max-width:800px){
+    #about-me-content{
+        display:block;
+    }
+    #about-me-text {
+        width:100%;
+    }
+    #professional-picture-container{
+        width:200px;
+        margin:auto;
+    }
+    #center-about-me-text{
+        -ms-transform: translateY(0%);
+        transform: translateY(0%);
     }
 }
+

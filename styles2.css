@@ -50,6 +50,49 @@ body {
 #navbar-contact-info{
     margin-right:20px;
 }
+@media screen and (max-width: 700px) {
+    #navbar {
+        justify-content: none;
+    }
+    .navbar-item{
+        width: 70px;
+        margin-top:10px;
+        align-items: center;
+        text-align: center;
+
+    }
+    #navbar a {
+        font-size:13px;
+    }
+    #navbar-home a{
+        font-size:20px;
+    }
+    #navbar-my-work {
+        width:80px;
+    }
+    #navbar-contact-info{
+        margin-right:5px;
+    }  
+} 
+@media screen and (max-width: 450px) {
+    .navbar-item{
+        width: 60px;
+        margin-top:10px;
+        align-items: center;
+        text-align: center;
+    }
+    #navbar a {
+        font-size:10px;
+    }
+    #navbar-home{
+        width:100px;
+        font-size:15px;
+        padding-top:0px;
+        margin-top:10px;
+        margin-left: 20px;
+    }
+}
+
 /*end navbar section*/
 
 
@@ -76,13 +119,24 @@ body {
 #sidebar-container a:hover{
     color: #fff;
 }
-/*end side bar section*/
-
-
 #content-container{
     padding-left:10px;
     width:80%;
 }
+/*end side bar section*/
+@media screen and (max-width:815px) {
+    #sidebar-container{
+        display:none;
+        width:0px;
+    }
+    #content-container{
+        width:95%;
+        margin:auto;
+    }
+}
+
+
+
 
 #ml-section-content {
     display:flex;
@@ -100,6 +154,7 @@ body {
     #mlExample {
         display:block;
         margin:auto;
+        width:80%;
     }
 }
 
@@ -165,4 +220,11 @@ body {
 #video{
     display:block;
     margin:auto;
+}
+
+@media screen  and (max-width:600px){
+    #video {
+        width:288px;
+        height:162px;
+    }
 }
