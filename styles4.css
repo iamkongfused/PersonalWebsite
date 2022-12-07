@@ -1,0 +1,30 @@
+.divider {
+    display:block;
+    height:3px;
+    width: 100%;
+    background-color:#ffaf54;
+    margin-top: 0px;
+}
+
+#navbar-resume a{
+    font-weight:bold;
+    color:#fff;
+}
+#page-container{
+    width:80%;
+    margin:auto;
+}
+
+h2{
+    margin-left:20px;
+    margin-top:20px;
+    font-size:32px;
+
+}
+h3{
+    color:#fd951f;
+    font-size:24px;
+}
+p{
+    padding-left:10px;
+}
