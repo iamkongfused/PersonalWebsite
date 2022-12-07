@@ -1,0 +1,70 @@
+#title-banner-container{  
+    grid-row:1/span 2;
+    height:100%;
+    width:100%;
+    display:flex;
+    flex-direction:column;
+}
+#personal-picture-container{
+    height:70%;
+}
+#personal-picture{
+    height:100%;
+    width:100%;
+    object-fit:cover;
+}
+#title-card-container{
+    text-align: center;
+    height:30%;
+    background-color: #eeefff;
+    padding:10px;
+}
+
+
+
+#about-me-container {
+    width: calc(100%-60px);
+    max-width: 100%;
+    padding:10px;
+    /* background-color:#f3f3f3; */
+}
+#about-me-content{
+    display:flex;
+    margin:auto;
+    width:80%;
+}
+#professional-picture-container{
+    width:40%;
+}
+#professional-picture{
+    width:100%;
+}
+#about-me-text{
+    position:relative;
+    padding-left:20px;
+    width:60%;
+}
+#center-about-me-text{
+    margin: 0;
+    position: absolute;
+    top: 50%;
+    -ms-transform: translateY(-50%);
+    transform: translateY(-50%);
+}
+@media screen and (max-width:800px){
+    #about-me-content{
+        display:block;
+    }
+    #about-me-text {
+        width:100%;
+    }
+    #professional-picture-container{
+        width:200px;
+        margin:auto;
+    }
+    #center-about-me-text{
+        -ms-transform: translateY(0%);
+        transform: translateY(0%);
+    }
+}
+
